@@ -5,6 +5,8 @@
  * @author  Taka Goto <www.plus-5.com>
  * @copyright (c)2018 PlusFive (https://www.plus-5.com)
  */
+namespace plugin;
+
 class FixedForm extends \Tms\Plugin
 {
     /**
@@ -120,5 +122,10 @@ class FixedForm extends \Tms\Plugin
                 $this->view->bind('fixedForms', $fixed_forms);
                 break;
         }
+    }
+
+    public static function extendTemplateDir()
+    {
+        return __DIR__ . '/' . \Tms\View::TEMPLATE_DIR_NAME;
     }
 }

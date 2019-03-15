@@ -8,7 +8,7 @@
  * https://www.plus-5.com/licenses/mit-license
  */
 
-namespace FixedForm\Lang;
+namespace plugin\FixedForm\Lang;
 
 /**
  * Japanese Languages for Tms.

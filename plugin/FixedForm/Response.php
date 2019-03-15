@@ -5,9 +5,10 @@
  * @author  Taka Goto <www.plus-5.com>
  * @copyright (c)2018 PlusFive (https://www.plus-5.com)
  */
-namespace FixedForm;
+namespace plugin\FixedForm;
+use plugin\FixedForm;
 
-class Response extends \FixedForm
+class Response extends FixedForm
 {
     /**
      * Object Constructer.

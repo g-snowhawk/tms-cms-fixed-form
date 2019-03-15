@@ -8,7 +8,7 @@
  * @copyright 2018 PlusFive (https://www.plus-5.com)
  */
 
-namespace FixedForm;
+namespace plugin\FixedForm;
 
 /**
  * Application install class.
