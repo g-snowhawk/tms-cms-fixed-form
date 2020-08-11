@@ -20,6 +20,6 @@ CREATE TABLE IF NOT EXISTS `TMS_fixed_form` (
   PRIMARY KEY (`id`),
   KEY `sitekey` (`sitekey`),
   KEY `userkey` (`userkey`),
-  CONSTRAINT `TMS_fixed_form_ibfk_1` FOREIGN KEY (`sitekey`) REFERENCES `TMS_site` (`id`),
-  CONSTRAINT `TMS_fixed_form_ibfk_2` FOREIGN KEY (`userkey`) REFERENCES `TMS_user` (`id`)
+  CONSTRAINT `TMS_fixed_form_ibfk_1` FOREIGN KEY (`sitekey`) REFERENCES `TMS_site` (`id`) ON UPDATE CASCADE ON DELETE CASCADE,
+  CONSTRAINT `TMS_fixed_form_ibfk_2` FOREIGN KEY (`userkey`) REFERENCES `TMS_user` (`id`) ON UPDATE CASCADE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
