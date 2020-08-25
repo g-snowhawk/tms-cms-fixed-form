@@ -1,0 +1,19 @@
+{
+    "name": "g-snowhawk/tms-cms-fixed-form",
+    "type": "library",
+    "description": "This package is plugin for content management system.",
+    "license": "MIT",
+    "author": {
+        "name": "Taka G",
+        "email": "githave@p5on.net",
+        "homepage": "https://www.p5on.net"
+    },
+    "autoload": {
+        "psr-4": {
+            "plugin\\FixedForm\\" : "plugin/FixedForm/"
+        },
+        "classmap": [
+            "plugin/FixedForm/FixedForm.php"
+        ]
+    }
+}
