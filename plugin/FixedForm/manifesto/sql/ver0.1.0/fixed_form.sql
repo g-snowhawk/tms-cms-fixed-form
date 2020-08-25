@@ -8,7 +8,7 @@
 CREATE TABLE IF NOT EXISTS `TMS_fixed_form` (
   `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT,
   `sitekey` int NOT NULL,
-  `userkey` int NOT NULL,
+  `userkey` int unsigned NOT NULL,
   `title` varchar(255) NOT NULL,
   `content` text,
   `tags` varchar(1024) DEFAULT NULL,

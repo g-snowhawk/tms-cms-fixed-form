@@ -20,7 +20,7 @@ final class setup extends \Tms\PackageSetup
     /**
      * Current version number.
      */
-    const VERSION = '0.1';
+    const VERSION = '0.1.0';
 
     /**
      * Object constructor.
