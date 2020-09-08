@@ -4,15 +4,12 @@
   <link rel="stylesheet" href="{{ config.global.assets_path }}style/cms/default.css">
 {% endblock %}
 
-{% block head %}
-  <script src="{{ config.global.assets_path }}script/fix_thead_vertical_scroll.js"></script>
-{% endblock %}
-
 {% block main %}
   <input type="hidden" name="mode" value="fixed-form~receive:remove">
   <div class="explorer-list">
     <h1 class="headline">定型文一覧</h1>
-      <table class="ftv-table">
+    <div class="explorer-body">
+      <table>
         <thead>
           <tr>
             <td>タイプ</td>
@@ -38,22 +35,22 @@
               <td class="nowrap empty" colspan="4">定型文の登録がありません</td>
               <td></td>
               <td></td>
-              <td></td>
             </tr>
           {% endfor %}
         </tbody>
       </table>
-      <div class="footer-controls">
-        <nav class="links">
-          {% if apps.hasPermission('cms.template.create') %}
-            <a href="?mode=fixed-form~response:edit"><mark>+</mark>新規定型文</a>
-          {% else %}
-            <span>&nbsp;</span>
-          {% endif %}
-        </nav>
-        <nav class="pagination">
-          {% include 'pagination.tpl' %}
-        </nav>
-      </div>
+    </div>
+    <div class="footer-controls">
+      <nav class="links">
+        {% if apps.hasPermission('cms.template.create') %}
+          <a href="?mode=fixed-form~response:edit"><mark>+</mark>新規定型文</a>
+        {% else %}
+          <span>&nbsp;</span>
+        {% endif %}
+      </nav>
+      <nav class="pagination">
+        {% include 'pagination.tpl' %}
+      </nav>
+    </div>
   </div>
 {% endblock %}
